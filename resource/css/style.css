@@ -77,9 +77,28 @@ header span {
 section {
     margin-bottom: 1.5rem;
 }
-
-
-
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.3rem;
+    margin: 1rem 0;
+    z-index: 1001;
+}
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #892651;
+    border-radius: 2px;
+    transition: 0.3s;
+}
 /* Header Nav */
 nav {
     display: flex;
@@ -144,33 +163,13 @@ nav li {
 
 @media screen and (max-width: 1374px) {
   .about-picture {
-    flex: none; /* Prevent the image container from growing/shrinking */
-    width: 300px; /* Set a fixed width for the image container */
+      flex: none;
+    width: 300px;
   }
 
   .about-picture img {
-    width: 100%; /* Ensure the image fills the container */
-  }
+    width: 100%;
 }
-
-@media screen and (max-width: 1100px) {
-  .about-panel {
-    flex: 1; /* Reduce the panel's space */
-  }
-
-  .about-picture {
-    flex: 1; /* Ensure the picture takes up the remaining space */
-  }
-}
-
-@media screen and (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-
-    .about-picture {
-        justify-content: flex-start; /* Align image to the left on smaller screens */
-    }
 }
 
 /* Projects */
@@ -194,13 +193,10 @@ nav li {
 }
 
 .project-images {
-    width: auto;
-    height: 250px;
-    gap: .5rem;
-
-}
-.project-images {
     display: flex;
+    width: auto;
+    height: 15.625rem;
+    gap: .5rem;
     border: .5px solid dimgray;
     border-radius: 5px;
 }
@@ -250,5 +246,109 @@ nav li {
 }
 
 footer {
-   text-align: right;
+    text-align: right;
+}
+
+/* Responsive Design for mobile*/
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+    body {
+        margin: 0 5%;
+    }
+    header.main-title {
+        align-items: center;    
+        gap: 1rem;
+    }
+    
+    .main-title h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+      .hamburger {
+    display: flex;
+    } 
+    nav.nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #FDFCDC;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    nav.nav.open {
+        display: flex;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    nav li {
+        margin: 0.5rem 0;
+        margin-left: 0;
+    }
+    .breaking-news {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-container {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    .about-picture {
+      width: 100%;
+      justify-content: center;
+      max-width: 100%;
+    }
+    .about-picture img {
+        max-width: 200px;
+        margin: 0 auto;
+        order: -1;
+    }
+    .about-panel {
+    order: 1;
+  }
+    .skills-icons {
+        gap: 1rem;
+    }
+    .skills-icons img {
+        width: 2rem;
+    }
+    .container.contact {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .contact-icones {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-icones img {
+        width: 2rem;
+    }
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .project-images {
+        flex-wrap: wrap;
+
+        
+    }
+    .project-images img {
+        width: 30%;
+        height: auto;
+        max-width: none;
+        margin-bottom: 0;
+        flex: 1 1 0;
+    }
 }

@@ -14,3 +14,18 @@ const updateCountdown = () => {
 
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
+
+// Toggle hamburger menu
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav.nav');
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      hamburger.setAttribute(
+        'aria-expanded',
+        nav.classList.contains('open') ? 'true' : 'false'
+      );
+    });
+  }
+});
