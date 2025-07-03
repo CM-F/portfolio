@@ -1,0 +1,254 @@
+/* Universal styles */
+html {
+    font-family: 'Yaldevi',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    color: dimgray;
+    background-color: #fed9b7;
+    margin : 0 10%;
+}
+
+a {
+    color: #892651;
+    text-decoration: none;
+}
+
+h3 {
+    Font-weight: 700;
+    Font-size: 24px;
+    Font-family: "Yrsa";
+}
+
+.container {
+    background-color: #FDFCDC;
+    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: .75rem auto;
+}
+
+.example {
+    font-family: "picholine-antique-variable",sans-serif;
+    font-variation-settings: 'wght' 100;
+}
+
+.breaking-news {
+    display: flex;
+    text-align:inherit;
+}
+
+.breaking-news h2{
+    font-size: 1.5rem;
+    justify-content: space-between;
+    letter-spacing: 5px;   
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header Title */
+header span {
+    font-weight: bold;
+}
+
+.main-title h1 {
+    font-weight: 100;
+    color: #892651;
+}
+
+.seven {
+    font-weight: 900;
+    color: #aa2e64;
+}
+
+.nine {
+    font-weight: 900;
+    color: #892651;
+}
+
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* Header Nav */
+nav {
+    display: flex;
+    text-align: right;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 889px) {
+    nav li {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+}
+
+/* About me */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    box-shadow: 0px 0px 0px #fed9b7;
+    width: 100%;
+
+}
+
+.about-panel {
+    flex: 3;
+    background-color: #FDFCDC;
+    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.about-picture {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    max-width:18.75rem;
+    min-width: none;
+}
+
+.about-picture img{
+    border: .5px solid dimgray;
+    border-radius: 5px;
+    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+    flex:1;
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+@media screen and (max-width: 1374px) {
+  .about-picture {
+    flex: none; /* Prevent the image container from growing/shrinking */
+    width: 300px; /* Set a fixed width for the image container */
+  }
+
+  .about-picture img {
+    width: 100%; /* Ensure the image fills the container */
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about-panel {
+    flex: 1; /* Reduce the panel's space */
+  }
+
+  .about-picture {
+    flex: 1; /* Ensure the picture takes up the remaining space */
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .about-picture {
+        justify-content: flex-start; /* Align image to the left on smaller screens */
+    }
+}
+
+/* Projects */
+.container {
+    display: flex;
+    gap: .75rem;
+}
+
+.container h3 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.container p {
+    margin: auto 1rem;
+}
+
+.project-panel {
+    justify-items: start;
+}
+
+.project-images {
+    width: auto;
+    height: 250px;
+    gap: .5rem;
+
+}
+.project-images {
+    display: flex;
+    border: .5px solid dimgray;
+    border-radius: 5px;
+}
+
+.project-images img {
+    border-radius: 5px;
+}
+
+/* Skills */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+}
+.skills-icons img {
+    width: 3rem;
+    height: auto;
+    
+}
+
+/* Contact */
+.container.contact p{
+    font-size: 1.5rem;
+}
+.container.contact{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-icones {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: .5rem;
+}
+
+.contact-icones img{
+    width: 3rem;
+    height: auto;
+}
+
+/* ACKNOWLEDGMENTS */
+.acknoledgments-panel a{
+    text-decoration: underline;
+}
+
+footer {
+   text-align: right;
+}
