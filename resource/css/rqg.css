@@ -1,0 +1,38 @@
+/* project conatainer */
+.project.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column; 
+}
+
+/* button */
+.button {
+    color: #FDFCDC;
+    text-align: center;
+    background-color: #892651;
+    padding: 10px;
+    width: 15%;
+    border-radius: 5px;
+    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active{
+    color: dimgray;
+    background:#FFFFFF;
+
+}
+
+/* Inputs */
+.project-panel pre,
+.project-panel .ascii-art {
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: .5rem;
+    overflow-x: auto;
+}

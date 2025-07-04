@@ -194,7 +194,6 @@ nav li {
 .project-images {
     display: flex;
     width: 100%;
-    
     gap: .5rem;
     border-radius: 5px;
     
