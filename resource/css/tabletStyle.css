@@ -22,7 +22,6 @@
     order: 1;
   }
   .project.container {
-    border: 5px solid red;
     flex-direction: column;
   }
 }
