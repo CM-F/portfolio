@@ -1,11 +1,14 @@
 /* Responsive Design for mobile below 700px*/
 @media screen and (max-width: 700px) {
+    /* Universal style */
     html {
         font-size: 14px;
     }
     body {
         margin: 0 5%;
     }
+
+    /* Header */
     header.main-title {
         align-items: center;    
         gap: 1rem;
@@ -15,10 +18,10 @@
         font-size: 1.5rem;
         text-align: left;
     }
-      .hamburger {
+    .hamburger {
     display: flex;
     } 
-    nav.nav {
+    .nav {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -29,7 +32,7 @@
         z-index: 1000;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    nav.nav.open {
+    .nav.open {
         display: flex;
     }
     nav ul {
