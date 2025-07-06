@@ -1,9 +1,8 @@
 /* project conatainer */
 .project.container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction:column; 
+    flex-direction:column;
 }
 
 /* button */
@@ -12,7 +11,6 @@
     text-align: center;
     background-color: #892651;
     padding: 10px;
-    width: 15%;
     border-radius: 5px;
     box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
 }
@@ -24,15 +22,32 @@
 .button:active{
     color: dimgray;
     background:#FFFFFF;
-
+    
 }
 
 /* Inputs */
-.project-panel pre,
-.project-panel .ascii-art {
+.project-panel,
+.project-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.ascii-art {
     font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
-    margin: 1rem 0;
     font-weight: bold;
     font-size: .5rem;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    white-space: pre;
     overflow-x: auto;
+    display: block;
 }
