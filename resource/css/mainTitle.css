@@ -1,0 +1,128 @@
+/* ==== HEADER ==== */
+/* ---- Container ---- */
+.main-title {
+    font-family: 'Yaldevi',Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+.main-title a {
+    color: #892651;
+    text-decoration: none;
+}
+.main-title span {
+    font-weight: bold;
+}
+
+.main-title h1 {
+    font-size: xx-large;
+    font-weight: 100;
+    color: #892651;
+}
+
+.seven {
+    font-weight: 900;
+    color: #aa2e64;
+}
+
+.nine {
+    font-weight: 900;
+    color: #892651;
+}
+
+/* ---- Nav ---- */
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav li {
+    margin-left: 2rem;
+}
+
+/* ---- Hamburger Menu ---- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.3rem;
+    margin: 1rem 0;
+    z-index: 1001;
+}
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #892651;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+
+/* ==== Adjusting the nav for screens bellow 890px ==== */
+@media screen and (max-width: 889px) {
+    .main-title {
+        height: 9rem;
+    }
+
+    .nav li {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+}
+
+/* ==== Responsive Design for mobile below 700px ==== */
+@media screen and (max-width: 700px) {
+    .main-title  {
+        font-size: 14px;
+        margin: 0 5%;
+        align-items: center;    
+        gap: 1rem;
+        height: 5rem;
+    }
+    
+    .main-title h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .hamburger {
+    display: flex;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #FDFCDC;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .nav.open {
+        display: flex;
+    }
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    .nav li {
+        margin: 0.5rem 0;
+        margin-left: 0;
+    }
+}
