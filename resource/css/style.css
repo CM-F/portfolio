@@ -177,6 +177,25 @@ section {
     flex-wrap: wrap;
 }
 
+.project-panel a {
+    color: #FDFCDC;
+    text-align: center;
+    background-color: #892651;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+}
+.project-panel a:hover {
+    cursor: pointer;
+    color: dimgray;
+    background:#FFFFFF;
+}
+
+.project-panel a:active {
+    color: dimgray;
+    background:#FFFFFF;
+}
+
 .project-images {
     display: flex;
     width: 100%;
@@ -215,11 +234,42 @@ section {
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: space-around;
+    
 }
-.skills-icons img {
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-with-tooltip {
+    display: block;
     width: 3rem;
     height: auto;
     
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  top: -2rem; /* Centre verticalement le tooltip */
+  left: 50%; /* Centre horizontalement le tooltip */
+  transform: translate(-50%, -50%); /* Ajuste la position pour un centrage parfait */
+  background-color: #89265191;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s; /* Animation pour l'apparition */
+  
+  text-align: center;
+}
+
+.image-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (max-width: 700px) {
