@@ -232,12 +232,14 @@ section {
 .project-panel a {
     color: #892651;
     text-decoration: underline;
+    display: block;
+    text-align: left;
+    width: 100%;
     
 }
 .project-panel a:hover {
     cursor: pointer;
     color: dimgray;
-    background:#FFFFFF;
 }
 
 .project-panel a:active {
@@ -250,7 +252,6 @@ section {
     width: 100%;
     gap: .5rem;
     border-radius: 5px;
-    
 }
 
 .project-images img {
@@ -260,21 +261,28 @@ section {
 
 @media screen and (max-width: 1098px) and (min-width: 701px) {
     /* ---- PROJECTS ---- */
-  .project.container {
-      flex-direction: column;
-  }
+    .project.container {
+        flex-direction: column;
+    }
 }
-
-@media screen and (max-width: 700px) {
-.project-images {
+@media screen and (max-width: 1098px) {
+    .project-images {
         display: flex;
         gap: .25rem;
         justify-content: center;
+        width: 95%;
+        margin: auto; 
     }
+    .project-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
     .project-images img {
         margin-bottom: 0;
         flex: 3 3 auto;
     }
+
 }
 
 
