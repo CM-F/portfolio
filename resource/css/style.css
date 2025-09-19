@@ -175,12 +175,13 @@ section {
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: space-around;
-    
+    align-items: center;
 }
 
 .image-wrapper {
   position: relative;
   display: inline-block;
+
 }
 
 .image-with-tooltip {
