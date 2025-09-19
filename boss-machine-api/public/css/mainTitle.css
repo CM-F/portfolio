@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin : 0 10%;
     height: 5rem;
 }
 
@@ -32,6 +33,8 @@
     font-weight: 900;
     color: #892651;
 }
+
+/* ---- Nav ---- */
 
 .nav ul {
     display: flex;
@@ -68,15 +71,19 @@
 }
 
 
-/* ==== Adjusting the nav for screens bellow 890px ==== */
+/* Adjusting the nav for smaller screens */
 @media screen and (max-width: 889px) {
     .main-title {
         height: 9rem;
     }
-    
+
+    .nav li {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
 }
 
-/* ==== Responsive Design for mobile below 700px ==== */
+/* Responsive Design for mobile below 700px*/
 @media screen and (max-width: 700px) {
     .main-title  {
         font-size: 14px;
@@ -90,60 +97,75 @@
         font-size: 1.5rem;
         text-align: left;
     }
-    
+
     .hamburger {
-        display: flex;
-    }
-    
-    /* ---- Nav in the hamburger ---- */
-    .nav ul {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
     }
 
-    .nav li {
-        margin-left: 0;
-    }
-    
     .nav {
         display: none;
         flex-direction: column;
         width: 100%;
+        background: #FDFCDC;
         position: absolute;
         top: 60px;
+        left: 0;
         z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-
     .nav.open {
         display: flex;
-        left: 10rem;
-        border-radius: 5px;
-        border : solid 0.2px #892651;
-        width: 50%;
-        background: #FDFCDC;
     }
-    
-    .nav.open ul {
-        text-align: center;
+    .nav ul {
+        flex-direction: column;
         width: 100%;
-        padding-left: 0;    
+        align-items: flex-start;
+        padding-left: 0;
     }
-    
-    .nav.open li {
-        list-style-type: none;
-        text-align: center;
-        height: 3rem;
+    .nav li {
+        margin: 0.5rem 0;
+        margin-left: 0;
     }
 }
 
-@media screen and (max-width: 353px) {
-    .main-title {
-        margin: 0;
-    }
-    
-    .hamburger {
-    margin: 0;
+/* ==== MAIN ==== */
+section {
+    margin-bottom: 1.5rem;
 }
+
+.container {
+    background-color: #FDFCDC;
+    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: .75rem auto;
+    display: flex;
+    gap: .75rem;
+}
+
+.container h3 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.container p {
+    margin: auto 1rem;
+}
+
+
+.section-container {
+    display: flex;
+    text-align:inherit;
+}
+
+.section-container h2{
+    font-size: 1.5rem;
+    justify-content: space-between;
+    letter-spacing: 5px;   
+}
+
+/* ==== FOOTER ==== */
+footer {
+    text-align: right;
 }
