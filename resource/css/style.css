@@ -225,9 +225,12 @@ section {
 
 /* ---- PROJECTS ---- */
 
+
 .project-panel {
     justify-items: start;
     flex-wrap: wrap;
+    min-height: 200px;
+    width: 100%;
 }
 
 .project-panel a {
@@ -253,11 +256,20 @@ section {
     width: 100%;
     gap: .5rem;
     border-radius: 5px;
+    justify-content: center;
 }
 
 .project-images img {
     width: 30%;
     border-radius: 5px;
+    height: auto;
+}
+
+@media screen and (min-width: 1098px) {
+    .project.container:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
 }
 
 @media screen and (max-width: 1098px) and (min-width: 701px) {
