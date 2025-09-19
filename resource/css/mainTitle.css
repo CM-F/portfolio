@@ -33,6 +33,16 @@
     color: #892651;
 }
 
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav li {
+    margin-left: 2rem;
+}
 
 /* ---- Hamburger Menu ---- */
 .hamburger {
@@ -86,6 +96,17 @@
     }
     
     /* ---- Nav in the hamburger ---- */
+    .nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    }
+
+    .nav li {
+        margin-left: 0;
+    }
+    
     .nav {
         display: none;
         flex-direction: column;
@@ -110,7 +131,7 @@
     }
     
     .nav.open li {
-        list-style-type: none; 
+        list-style-type: none;
         text-align: center;
         height: 3rem;
     }

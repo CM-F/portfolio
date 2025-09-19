@@ -14,3 +14,4 @@ const updateCountdown = () => {
 
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
+
