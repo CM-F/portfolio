@@ -6,7 +6,7 @@ html {
 
 body {
     color: dimgray;
-    background-color: #fed9b7;
+    background-color: aliceblue;
     margin : 0 10%;
 }
 
@@ -36,8 +36,8 @@ section {
 }
 
 .container {
-    background-color: #FDFCDC;
-    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+    background-color: #fcfbf1;
+    box-shadow: -4px 3px 0px rgba(164, 188, 189, 0.5);
     border-radius: 5px;
     padding: 1rem;
     margin: .75rem auto;
@@ -79,8 +79,8 @@ section {
 
 .about-panel {
     flex: 3;
-    background-color: #FDFCDC;
-    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+    background-color: #fcfbf1;
+    box-shadow: -4px 3px 0px rgba(164, 188, 189, 0.5);
     border-radius: 5px;
     padding: 10px;
 }
@@ -100,7 +100,7 @@ section {
 
 .about-picture img{
     border-radius: 5px;
-    box-shadow: -4px 3px 0px rgba(0, 175, 185, .50);
+    box-shadow: -4px 3px 0px rgba(164, 188, 189, 0.5);
     flex:1;
     width: 100%;
     height: auto;
