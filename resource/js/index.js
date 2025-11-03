@@ -4,7 +4,7 @@ const updateCountdown = () => {
     const poolDate = new Date('October 6, 2025 09:00:00').getTime();
     const now = new Date().getTime();
     const intlNumberFormatter = new Intl.NumberFormat("fr-FR");
-    const timeRemaining = Math.floor((poolDate - now)/1000);
+    const timeRemaining = Math.floor((now - poolDate)/1000);
     const formattedRemaining = intlNumberFormatter.format(timeRemaining);
     
     // Insert countdown in the span
