@@ -18,7 +18,7 @@
     <header class="main-title">
         <h1 class="company-name">CLEMENT<span class="seven">MARTIN</span><span class="nine">FASQUEL</span></h1>
         <nav>
-        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -59,18 +59,18 @@
             <div class="container">
                 <div class="skills-icons">
                     <div class="image-wrapper">
-                        <img src="./resource/icons/000-html.png" alt="html icon" class="image-with-tooltip">
-                        <span class="tooltip-text">HTML</span>
+                        <img src="./resource/icons/012-react.png" alt="React icon" class="image-with-tooltip">
+                        <span class="tooltip-text">React</span>
                     </div>
                     
                     <div class="image-wrapper">
-                        <img src="./resource/icons/001-css.png" alt="css icon" class="image-with-tooltip">
-                        <span class="tooltip-text">CSS</span>
+                        <img src="./resource/icons/015-vuejs.png" alt="vuejs icon" class="image-with-tooltip">
+                        <span class="tooltip-text">Vue.js</span>
                     </div>
                     
                     <div class="image-wrapper">
-                        <img src="./resource/icons/002-js.png" alt="js icon" class="image-with-tooltip">
-                        <span class="tooltip-text">JavaScript</span>
+                        <img src="./resource/icons/016-angular.png" alt="angular icon" class="image-with-tooltip">
+                        <span class="tooltip-text">Angular</span>
                     </div>
                     
                     <div class="image-wrapper">
@@ -97,6 +97,11 @@
                         <img src="./resource/icons/006-terminal.png" alt="terminal icon" class="image-with-tooltip">
                         <span class="tooltip-text">Bash</span>
                     </div>
+                    
+                    <div class="image-wrapper">
+                        <img src="./resource/icons/014-docker.png" alt="github icon" class="image-with-tooltip">
+                        <span class="tooltip-text">Docker</span>
+                    </div>
 
                     <div class="image-wrapper">
                         <img src="./resource/icons/011-python.png" alt="python icon" class="image-with-tooltip">
@@ -122,9 +127,73 @@
             </div>
             <div class="project container">
                 <div class="project-images">
-                    <img src="./resource/images/bm0.png" alt="Anthony Perkins ASCII art">           
-                    <img src="./resource/images/bm1.png" alt="James Earl Jones ASCII art">           
-                    <img src="./resource/images/bm2.png" alt="Samuel L. Jackson ASCII art">
+                    <img src="./resource/images/cc0.png" alt="Contact CRM img1">           
+                    <img src="./resource/images/cc1.png" alt="Contact CRM img2">           
+                    <img src="./resource/images/cc2.png" alt="Contact CRM img3">
+                </div>
+                <div class="project-panel">
+                    <h3 class="project-name">Contact Manager</h3>
+                    <p class="project-presentation">A local contact management application for creating, editing, filtering, and sorting contacts with local persistence, built using Angular and TypeScript. Contacts are saved in the browser's localStorage, ensuring data remains available even after refreshing the page.
+                    <br>
+                    <br>
+                    Technologies used: <strong>Angular 20</strong>,
+                    <strong>TypeScript</strong>, 
+                    <strong>localStorage</strong>,
+                    <strong>Prettier</strong>,
+                    <strong>ESLint</strong>.
+                    <br>
+                    <br>
+                    <a href="https://github.com/CM-F/contact-crm" target="_blank">Here the Github page !</a></p>
+                </div>
+            </div>
+            <div class="project container">
+                <div class="project-images">
+                    <img src="./resource/images/blm0.png" alt="Blog Manager img1">           
+                    <img src="./resource/images/blm1.png" alt="Blog Manager img2">           
+                    <img src="./resource/images/blm2.png" alt="Blog Manager img3">
+                </div>
+                <div class="project-panel">
+                    <h3 class="project-name">Blog Manager</h3>
+                    <p class="project-presentation">A simple blog application for creating, editing, and deleting articles with local persistence, built using React, TypeScript, and TailwindCSS. Articles are saved in the browser's localStorage, so they remain available even after refreshing the page.
+                    <br>
+                    <br>
+                    Technologies used: <strong>React (with vite)</strong>,
+                    <strong>TypeScript</strong>, 
+                    <strong>TailwindCSS</strong>, 
+                    <strong>localStorage</strong>,
+                    <strong>Prettier</strong>,
+                    <strong>ESLint</strong>.
+                    <br>
+                    <br>
+                    <a href="https://github.com/CM-F/blog-manager" target="_blank">Here the Github page !</a></p>
+                </div>
+            </div>
+            <div class="project container">
+                <div class="project-images">
+                    <img src="./resource/images/td0.png" alt="To-Do Manager img1">           
+                    <img src="./resource/images/td1.png" alt="To-Do Manager img2">           
+                    <img src="./resource/images/td2.png" alt="To-Do Manager img3">
+                </div>
+                <div class="project-panel">
+                    <h3 class="project-name">To-do Manager</h3>
+                    <p class="project-presentation">A simple to-do list application with local persistence, built using Vue.js 3 and TypeScript. Tasks are saved in the browser's localStorage, so they remain available even after refreshing the page.
+                    <br>
+                    <br>
+                    Technologies used: <strong>Vue.js</strong>,
+                    <strong>TypeScript</strong>, 
+                    <strong>localStorage</strong>,
+                    <strong>Prettier</strong>,
+                    <strong>ESLint</strong>.
+                    <br>
+                    <br>
+                    <a href="https://github.com/CM-F/to-do-manager" target="_blank">Here the Github page !</a></p>
+                </div>
+            </div>
+            <div class="project container">
+                <div class="project-images">
+                    <img src="./resource/images/bm0.png" alt="Boss Machine img1">           
+                    <img src="./resource/images/bm1.png" alt="Boss Machine img2">           
+                    <img src="./resource/images/bm2.png" alt="Boss Machine img3">
                 </div>
                 <div class="project-panel">
                     <h3 class="project-name">Boss Machine API</h3>
@@ -155,17 +224,6 @@
                     <a href="./rqg.html">It's over here !</a></p>
                 </div>
             </div>
-            <!-- <div class="container">
-                <div class="project-panel">
-                    <h3 class="project-name">Random Quotations Generator</h3>
-                    <p class="project-presentation">A fun and interactive Random Quotations Generator in JavaScript that displays famous movie quotes along with ASCII art representations of the comedians.</p>
-                </div>
-                <div class="project-images">
-                    <img src="./resource/images/rqg0.png" alt="Anthony Perkins ASCII art">           
-                    <img src="./resource/images/rqg1.png" alt="James Earl Jones ASCII art">           
-                    <img src="./resource/images/rqg2.png" alt="Samuel L. Jackson ASCII art">
-                </div>
-            </div> -->
         </section>
 
         
@@ -185,6 +243,7 @@
                 </div>
             </div>
         </section>
+
         <section id="acknoledgments">
             <div class="section-container">
                 <h2>ACKNOWLEDGMENTS</h2>
